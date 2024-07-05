@@ -8,9 +8,9 @@ safe_first_element
 from typing import Sequence, Any, Union
 
 
-def safe_first_element(lst: Sequence) -> Union[Any, None]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """
-    safe_first_element
+    Returns the first element of a sequence if it exists, otherwise returns None.
     """
     if lst:
         return lst[0]
